@@ -54,7 +54,7 @@ name = "Use Typo Metrics";
 value = 1;
 }
 );
-date = "2021-07-21 17:18:16 +0000";
+date = "2026-04-30 16:22:21 +0000";
 familyName = Ayuujk;
 featurePrefixes = (
 {
@@ -255,7 +255,9 @@ sub [x X] y' by y.alt ;
 sub [k K] y' by y.alt ;
 sub [p P] y' by y.alt ;
 sub [t T] y' by y.alt ;
-sub [j J J.case]  y' by y.alt ;
+sub [w W] y' by y.alt ;
+sub [j J] y' by y.2; 
+sub J.case  y' by y.alt ;
 sub T s y' by y.alt ;
 sub ts y' by y.alt ;
 sub y' y by y.2;
@@ -265,7 +267,8 @@ sub quotesingle' @mins by saltillo;
 sub quotesingle' @caps by Saltillo;
 sub saltillo' @Uppercase by Saltillo;
 #j vocales
-sub @vocales j' [@jcons @punt @space] by j.alt ;";
+sub @vocales j' [@jcons @punt @space] by j.alt ;
+";
 tag = calt;
 },
 {
@@ -46225,7 +46228,7 @@ key = copyrights;
 values = (
 {
 language = dflt;
-value = "Copyright © 2021 by Manuel López Rocha. All rights reserved.";
+value = "Copyright © 2026 by Manuel López Rocha. All rights reserved.";
 }
 );
 },

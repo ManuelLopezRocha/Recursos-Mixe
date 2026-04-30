@@ -95,7 +95,7 @@ name = "Use Typo Metrics";
 value = 1;
 }
 );
-date = "2021-07-21 17:18:16 +0000";
+date = "2026-04-30 16:22:54 +0000";
 familyName = Ayuujk;
 featurePrefixes = (
 {
@@ -41745,7 +41745,7 @@ key = copyrights;
 values = (
 {
 language = dflt;
-value = "Copyright © 2021 by Manuel López Rocha. All rights reserved.";
+value = "Copyright © 2026 by Manuel López Rocha. All rights reserved.";
 }
 );
 },
