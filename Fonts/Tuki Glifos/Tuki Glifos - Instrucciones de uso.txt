@@ -1,0 +1,81 @@
+Tuki Glifos.
+Instrucciones de uso
+-------------------------------------------------
+Tuki Glifos es un conjunto de fuentes de la familia Tuki que permiten la escritura de los glifos del epiolmeca, tanto los silábicos como los logográficos. Es recomendable usarla para documentación o para mostrar los logogramas. De lo contrario, es posible emplear las fuentes "Tuki", que también contienen los glifos silábicos y permiten la escritura de textos más complejos en sistema latino.
+______________
+
+1. LAS FUENTES
+______________
+Para emplear de forma sencilla los glifos del epiolmeca, es recomendable usar la fuente Tuki Glifos, que contiene tres variantes.
+
+- Tuki Glifos Vertical: Incluye los glifos silábicos y logográficos, con las figuras orientadas hacia la derecha. Permite escritura vertical en programas como Adobe Illustrator u otros que la soporten.
+- Tuki Glifos Espejo: Incluye el mismo repertorio y funciones que Tuki Glifos Vertical, pero presenta las figuras orientadas hacia la izquierda.
+- Tuki Glifos Rotado: incluye los signos con una rotación de 90 grados para simular la escritura vertical con una rotación de la caja de texto. Por su naturaleza, Tuki Glifos Rotado solo muestra letras mayúsculas.
+
+______________
+
+2. LAS FUNCIONES OPENTYPE
+______________
+
+
+Para hacer aparecer automáticamente los glifos del epiolmeca, es necesario activar las alternativas contextuales. Las alternativas contextuales (Contextual Alternates, ‘calt’) son una función OpenType que se activa desde los controles tipográficos avanzados de cada aplicación. 
+
+- En Microsoft Word
+
+Ve a la pestaña “Inicio”, abre el cuadro de diálogo de “Fuente” (ícono de flecha en la esquina), entra a la pestaña “Avanzado” y en “Funciones OpenType” selecciona “Alternativas contextuales”; en algunas versiones aparece como casilla dentro de “Ligaduras y opciones tipográficas”. 
+
+- En Adobe Illustrator
+
+Selecciona el texto y abre el panel “OpenType” (Ventana > Texto > OpenType); ahí activa “Alternativas contextuales”. También puedes usar el panel “Carácter” y el menú de opciones (icono de tres líneas) para habilitarlas. 
+
+- En Adobe InDesign
+
+Selecciona el texto, abre el panel “OpenType” (Ventana > Texto y tablas > OpenType) y marca “Alternativas contextuales”; igualmente puedes acceder desde el panel “Carácter” en el menú desplegable. 
+
+- En Affinity Designer, Photo o Publisher
+
+Selecciona el texto y abre el panel “Tipografía” (View > Studio > Typography); dentro de “OpenType” activa “Contextual Alternates”. 
+
+- En CorelDRAW, 
+
+Selecciona el texto, abre el panel de propiedades de texto (Ventana acoplable “Propiedades de objeto” o barra superior) y en las opciones OpenType activa “Contextual Alternates”. 
+
+- En Figma
+
+Selecciona el texto, ve al panel derecho, sección “Type details”, abre “OpenType features” y activa “calt” si está disponible (depende de la fuente).
+
+En aplicaciones de Office como PowerPoint o Publisher
+- El acceso es similar a Word: cuadro de diálogo de “Fuente” > “Avanzado” > funciones OpenType. 
+
+______________
+
+3. LOS GLIFOS
+______________
+
+
+Una vez activadas las alternativas contextuales, para mostrar los glifos del silabario epiolmeca, simplemente se escriben las combinaciones de letras. Por ejemplo pi o wë, sin necesidad de teclear ninguna otra combinación.
+
+Para los logogramas, se debe escribir el número de logograma correspondiente con un código de tres dígitos, por ejemplo 023 o 154. 
+ 
+Para conocer la equivalencia se puede consultar la guía incluida en el repositorio.
+
+______________
+
+4. LA NUMERACIÓN
+______________
+
+Las alternativas contextuales permiten la escritura de los números de la cuenta larga del 1 al 20 en el estilo de los glifos epigráficosficos de la Estela de la Mojarra. Para no interferir con los logogramas numerados, la escritura de estos números de realiza anteponiendo el símbolo #, por ejemplo #1 o #20.
+
+Las fuentes Tuki Glifos Vertical y tuki Glifos Espejo incluyen además un conjunto de cifras para la cuenta larga con sustituciones del 0 al 100 que deben ser activadas mediante las opciones OpenType, activando el conjunto estilístico 4 (ss04), que en algunas aplicaciones aparece descrito como "Cuenta larga" (ver las instrucciones para acceder al menú en el apartado 2 de este instructivo).
+
+
+______________
+
+5. LA ESCRITURA VERTICAL
+______________
+
+Tuki Glifos Vertical y Tuki Glifos espejo permiten la función de escritura vertical, con ajustes de espaciado especiales para este fin, aunque sola mente funcionan en aplicaciones que permitan esta opción.
+Una de las mejores opciones para aplicar la escritura vertical es Adobe Illustrator. Para activar la función es necesario desplegar el menú contextual en la herramienta texto y seleccionar la opción "texto vertical" (con el ícono de una T y una flecha apuntándoselos hacia abajo). Esta herramienta permite el flujo natural en columnas de izquierda a derecha o de derecha a izquierda, según el modo de párrafo seleccionado.
+
+Para otras aplicaciones, es posible simular el flujo vertical, empleando la fuente Tuki Glifos Rotado, con una rotación de 90 grados en sentido horario de la caja de texto.
+La desventaja de esta opción es que las columnas de texto fluyen solo en sentido de derecha a izquierda, por lo que para un flujo de izquierda a derecha, debe crearse una nueva caja de texto por cada columna.

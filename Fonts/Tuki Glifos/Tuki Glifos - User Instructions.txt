@@ -1,0 +1,78 @@
+Tuki Glifos.
+User Instructions
+-------------------
+
+Tuki Glifos is a set of fonts within the Tuki family designed for writing Epi-Olmec glyphs, both syllabic and logographic. It is recommended for documentation purposes or for displaying logograms. Alternatively, the “Tuki” fonts may be used, as they also include syllabic glyphs and allow for more complex text composition within the Latin writing system.
+
+______________
+
+1. THE FONTS
+______________
+
+To easily use Epi-Olmec glyphs, it is recommended to use the Tuki Glifos font, which includes three variants.
+
+Tuki Glifos Vertical: Includes both syllabic and logographic glyphs, with figures oriented to the right. It enables vertical writing in applications such as Adobe Illustrator or others that support this feature.
+Tuki Glifos Espejo: Includes the same repertoire and functions as Tuki Glifos Vertical, but with figures oriented to the left.
+Tuki Glifos Rotated: Includes the signs rotated 90 degrees to simulate vertical writing by rotating the text box. Due to its nature, Tuki Glifos Rotated only displays uppercase letters.
+______________
+
+2. OPENTYPE FEATURES
+______________
+
+To automatically display Epi-Olmec glyphs, it is necessary to enable Contextual Alternates. Contextual Alternates (‘calt’) are an OpenType feature that can be activated through the advanced typographic controls of each application.
+
+-In Microsoft Word
+
+Go to the “Home” tab, open the “Font” dialog box (small arrow icon in the corner), go to the “Advanced” tab, and under “OpenType Features” select “Contextual Alternates”; in some versions, it appears as a checkbox under “Ligatures and Typographic Options.”
+
+-In Adobe Illustrator
+
+Select the text and open the “OpenType” panel (Window > Type > OpenType); enable “Contextual Alternates.” You can also use the “Character” panel and its options menu (three-line icon) to activate them.
+
+-In Adobe InDesign
+
+Select the text, open the “OpenType” panel (Window > Type & Tables > OpenType), and enable “Contextual Alternates”; you can also access this from the “Character” panel menu.
+
+-In Affinity Designer, Photo, or Publisher
+
+Select the text and open the “Typography” panel (View > Studio > Typography); under “OpenType,” enable “Contextual Alternates.”
+
+-In CorelDRAW
+
+Select the text, open the text properties panel (Object Properties docker or top property bar), and enable “Contextual Alternates” within the OpenType options.
+
+-In Figma
+
+Select the text, go to the right panel under “Type details,” open “OpenType features,” and enable “calt” if available (depending on the font).
+
+-In Office applications such as PowerPoint or Publisher
+
+Access is similar to Word: Font dialog box > Advanced > OpenType features.
+
+______________
+
+3. THE GLYPHS
+______________
+
+Once Contextual Alternates are enabled, Epi-Olmec syllabic glyphs will appear simply by typing letter combinations. For example, type “pi” or “wë” without needing any additional input.
+
+For logograms, type the corresponding logogram number using a three-digit code, for example 023 or 154.
+
+To find the equivalence, refer to the guide included in the repository.
+
+______________
+
+4. NUMERALS
+______________
+
+Contextual Alternates allow the writing of Long Count numerals from 1 to 20 in the style of the epigraphic glyphs from La Mojarra Stela. To avoid conflicts with numbered logograms, these numerals are written by preceding them with the symbol #, for example #1 or #20.
+
+Tuki Glifos Vertical and Tuki Glifos Espejo fonts also include a set of "Long Count" numerals with substitutions from 0 to 100, which must be activated through OpenType options by enabling Stylistic Set 4 (ss04), which in some applications appears labeled as “Cuenta larga” (see section 2 of this guide for instructions on accessing the menu).
+
+VERTICAL WRITING
+
+Tuki Glifos Vertical and Tuki Glifos Espejo support vertical writing, with spacing adjustments specifically designed for this purpose, although they only work in applications that support vertical text.
+
+One of the best options for applying vertical writing is Adobe Illustrator. To activate this feature, open the contextual menu in the Type tool and select “Vertical Type” (icon with a T and a downward arrow). This tool allows natural column flow from left to right or right to left, depending on the selected paragraph direction.
+
+In other applications, vertical flow can be simulated using the Tuki Glifos Rotado font, by rotating the text box 90 degrees clockwise. The drawback of this method is that text columns only flow from right to left; for left-to-right flow, a new text box must be created for each column.
