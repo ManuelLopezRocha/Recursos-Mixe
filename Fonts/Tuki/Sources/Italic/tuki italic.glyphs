@@ -4,7 +4,9 @@
 DisplayStrings = (
 "`",
 "/dieresiscomb.narrow.case Ï",
-"×"
+"×",
+"ÄÄa",
+"e'e"
 );
 axes = (
 {
@@ -560,10 +562,10 @@ sub k k' by k.alt;
 sub t' t by t.alt;
 sub [m M n N x X k K p P t ts T J.case W w ] y' by y.alt ;
 sub T s y' by y.alt ;
-sub @mins quotesingle'  by saltillo;
-sub quotesingle' @mins by saltillo;
-sub quotesingle' @caps by Saltillo;
+#saltillo
 sub saltillo' @Uppercase by Saltillo;
+sub @mins [quotesingle quoteleft quoteright acute apostrophemod]' by saltillo;
+sub @caps [quotesingle quoteleft quoteright acute apostrophemod]' by Saltillo;
 #j vocales
 sub @vocales j' [@jcons @punt @space] by j.alt ;
 ";
@@ -612,7 +614,11 @@ sub quoteleft' @caps by Saltillo;
 sub @mins acute'  by saltillo;
 sub acute' @mins by saltillo;
 sub acute' @caps by Saltillo;
-sub @caps @caps acute' by Saltillo;";
+sub @caps @caps acute' by Saltillo;
+sub apostrophemod' @mins by saltillo;
+sub apostrophemod' @caps by Saltillo;
+sub @mins apostrophemod'  by saltillo;
+sub @caps apostrophemod' by Saltillo;";
 labels = (
 {
 language = dflt;
@@ -622,11 +628,18 @@ value = Saltillo;
 tag = ss01;
 },
 {
-code = "sub Adieresis' @mins by Adieresis.alt;
+code = "sub Adieresis' Adieresis by Adieresis.alt;
+sub Edieresis' Edieresis by Edieresis.alt;
+sub Idieresis' Idieresis by Idieresis.alt;
+sub Odieresis' Odieresis by Odieresis.alt;
+sub Udieresis' Udieresis by Udieresis.alt;
+
+sub Adieresis' @mins by Adieresis.alt;
 sub Edieresis' @mins by Edieresis.alt;
 sub Idieresis' @mins by Idieresis.alt;
 sub Odieresis' @mins by Odieresis.alt;
-sub Udieresis' @mins by Udieresis.alt;";
+sub Udieresis' @mins by Udieresis.alt;
+";
 labels = (
 {
 language = dflt;
@@ -840,7 +853,9 @@ value = Epiolmeca;
 tag = ss03;
 },
 {
-code = "#1 a 9
+code = "sub zero zero by cuadronum;
+
+#1 a 9
 sub [one two three four five six seven eight nine] by [uno.001 dos.001 tres.001 cuatro.001 cinco.001 seis.001 siete.001 ocho.001 nueve.001];
 sub [one.osf two.osf three.osf four.osf five.osf six.osf seven.osf eight.osf nine.osf] by [uno.001 dos.001 tres.001 cuatro.001 cinco.001 seis.001 siete.001 ocho.001 nueve.001];
 
@@ -82923,9 +82938,8 @@ width = 978;
 );
 },
 {
-export = 0;
 glyphname = cuadronum;
-lastChange = "2026-04-28 00:04:25 +0000";
+lastChange = "2026-05-07 00:56:00 +0000";
 layers = (
 {
 layerId = m002;
@@ -87457,6 +87471,39 @@ width = 591;
 );
 },
 {
+glyphname = apostrophemod;
+layers = (
+{
+layerId = m002;
+shapes = (
+{
+ref = quoteright;
+}
+);
+width = 217;
+},
+{
+layerId = "D79A8A11-453A-45E8-AB11-0C643E275637";
+shapes = (
+{
+ref = quoteright;
+}
+);
+width = 217;
+},
+{
+layerId = m003;
+shapes = (
+{
+ref = quoteright;
+}
+);
+width = 208;
+}
+);
+unicode = 700;
+},
+{
 glyphname = cero.002;
 lastChange = "2026-01-16 06:22:32 +0000";
 layers = (
@@ -87567,6 +87614,7 @@ axesValues = (
 205,
 1
 );
+exports = 0;
 instanceInterpolations = {
 "D79A8A11-453A-45E8-AB11-0C643E275637" = -0.07895;
 m002 = -0.05556;
