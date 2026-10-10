@@ -1,12 +1,13 @@
 {
-.appVersion = "3436";
+.appVersion = "4107";
 .formatVersion = 3;
 DisplayStrings = (
 "`",
 "/dieresiscomb.narrow.case Ï",
 "×",
 "ÄÄa",
-"e'e"
+"e'e",
+"½½½¼¼¼¾¾¾%%%‰‰‰/quince/quince/quince/dieciseis/dieciseis/dieciseis/diecisiete/diecisiete/diecisiete/dieciocho/dieciocho/dieciocho/diecinueve/diecinueve/diecinueve"
 );
 axes = (
 {
@@ -22432,19 +22433,22 @@ unicode = 8260;
 },
 {
 glyphname = onehalf;
-lastChange = "2026-01-16 06:15:09 +0000";
+lastChange = "2026-10-10 22:02:00 +0000";
 layers = (
 {
 layerId = "D79A8A11-453A-45E8-AB11-0C643E275637";
 shapes = (
 {
+alignment = -1;
 ref = one.num;
 },
 {
+alignment = -1;
 pos = (110,0);
 ref = fraction;
 },
 {
+alignment = -1;
 pos = (510,0);
 ref = two.dnom;
 }
@@ -22455,13 +22459,16 @@ width = 839;
 layerId = m002;
 shapes = (
 {
+alignment = -1;
 ref = one.num;
 },
 {
+alignment = -1;
 pos = (110,0);
 ref = fraction;
 },
 {
+alignment = -1;
 pos = (510,0);
 ref = two.dnom;
 }
@@ -22472,13 +22479,16 @@ width = 836;
 layerId = m003;
 shapes = (
 {
+alignment = -1;
 ref = one.num;
 },
 {
+alignment = -1;
 pos = (120,0);
 ref = fraction;
 },
 {
+alignment = -1;
 pos = (530,0);
 ref = two.dnom;
 }
@@ -22492,19 +22502,22 @@ unicode = 189;
 },
 {
 glyphname = onequarter;
-lastChange = "2026-01-16 06:15:09 +0000";
+lastChange = "2026-10-10 22:02:00 +0000";
 layers = (
 {
 layerId = "D79A8A11-453A-45E8-AB11-0C643E275637";
 shapes = (
 {
+alignment = -1;
 ref = one.num;
 },
 {
+alignment = -1;
 pos = (110,0);
 ref = fraction;
 },
 {
+alignment = -1;
 pos = (450,0);
 ref = four.dnom;
 }
@@ -22515,13 +22528,16 @@ width = 800;
 layerId = m002;
 shapes = (
 {
+alignment = -1;
 ref = one.num;
 },
 {
+alignment = -1;
 pos = (110,0);
 ref = fraction;
 },
 {
+alignment = -1;
 pos = (450,0);
 ref = four.dnom;
 }
@@ -22532,13 +22548,16 @@ width = 798;
 layerId = m003;
 shapes = (
 {
+alignment = -1;
 ref = one.num;
 },
 {
+alignment = -1;
 pos = (120,0);
 ref = fraction;
 },
 {
+alignment = -1;
 pos = (470,0);
 ref = four.dnom;
 }
@@ -22552,19 +22571,22 @@ unicode = 188;
 },
 {
 glyphname = threequarters;
-lastChange = "2026-01-16 06:15:09 +0000";
+lastChange = "2026-10-10 22:02:00 +0000";
 layers = (
 {
 layerId = "D79A8A11-453A-45E8-AB11-0C643E275637";
 shapes = (
 {
+alignment = -1;
 ref = three.num;
 },
 {
+alignment = -1;
 pos = (130,0);
 ref = fraction;
 },
 {
+alignment = -1;
 pos = (470,0);
 ref = four.dnom;
 }
@@ -22575,13 +22597,16 @@ width = 820;
 layerId = m002;
 shapes = (
 {
+alignment = -1;
 ref = three.num;
 },
 {
+alignment = -1;
 pos = (130,0);
 ref = fraction;
 },
 {
+alignment = -1;
 pos = (470,0);
 ref = four.dnom;
 }
@@ -22592,13 +22617,16 @@ width = 818;
 layerId = m003;
 shapes = (
 {
+alignment = -1;
 ref = three.num;
 },
 {
+alignment = -1;
 pos = (140,0);
 ref = fraction;
 },
 {
+alignment = -1;
 pos = (490,0);
 ref = four.dnom;
 }
@@ -32446,20 +32474,23 @@ unicode = 960;
 },
 {
 glyphname = percent;
-lastChange = "2026-01-03 05:32:15 +0000";
+lastChange = "2026-10-10 22:02:00 +0000";
 layers = (
 {
 layerId = "D79A8A11-453A-45E8-AB11-0C643E275637";
 shapes = (
 {
+alignment = -1;
 pos = (22,0);
 ref = zero.num;
 },
 {
+alignment = -1;
 pos = (172,0);
 ref = fraction;
 },
 {
+alignment = -1;
 pos = (532,0);
 ref = zero.dnom;
 }
@@ -32470,14 +32501,17 @@ width = 964;
 layerId = m002;
 shapes = (
 {
+alignment = -1;
 pos = (22,0);
 ref = zero.num;
 },
 {
+alignment = -1;
 pos = (202,0);
 ref = fraction;
 },
 {
+alignment = -1;
 pos = (532,0);
 ref = zero.dnom;
 }
@@ -32488,14 +32522,17 @@ width = 964;
 layerId = m003;
 shapes = (
 {
+alignment = -1;
 pos = (12,0);
 ref = zero.num;
 },
 {
+alignment = -1;
 pos = (236,0);
 ref = fraction;
 },
 {
+alignment = -1;
 pos = (582,0);
 ref = zero.dnom;
 }
@@ -32507,24 +32544,28 @@ unicode = 37;
 },
 {
 glyphname = perthousand;
-lastChange = "2026-01-03 05:32:23 +0000";
+lastChange = "2026-10-10 22:02:00 +0000";
 layers = (
 {
 layerId = "D79A8A11-453A-45E8-AB11-0C643E275637";
 shapes = (
 {
+alignment = -1;
 pos = (22,0);
 ref = zero.num;
 },
 {
+alignment = -1;
 pos = (172,0);
 ref = fraction;
 },
 {
+alignment = -1;
 pos = (532,0);
 ref = zero.dnom;
 },
 {
+alignment = -1;
 pos = (962,0);
 ref = zero.dnom;
 }
@@ -32535,18 +32576,22 @@ width = 1394;
 layerId = m002;
 shapes = (
 {
+alignment = -1;
 pos = (22,0);
 ref = zero.num;
 },
 {
+alignment = -1;
 pos = (201,0);
 ref = fraction;
 },
 {
+alignment = -1;
 pos = (532,0);
 ref = zero.dnom;
 },
 {
+alignment = -1;
 pos = (962,0);
 ref = zero.dnom;
 }
@@ -32557,18 +32602,22 @@ width = 1394;
 layerId = m003;
 shapes = (
 {
+alignment = -1;
 pos = (12,0);
 ref = zero.num;
 },
 {
+alignment = -1;
 pos = (236,0);
 ref = fraction;
 },
 {
+alignment = -1;
 pos = (582,0);
 ref = zero.dnom;
 },
 {
+alignment = -1;
 pos = (1042,0);
 ref = zero.dnom;
 }
@@ -82599,64 +82648,68 @@ width = 970;
 },
 {
 glyphname = quince;
-lastChange = "2026-01-06 20:37:40 +0000";
+lastChange = "2026-10-10 22:02:00 +0000";
 layers = (
 {
 layerId = "D79A8A11-453A-45E8-AB11-0C643E275637";
 shapes = (
 {
+alignment = -1;
 pos = (0,76);
 ref = five.001;
 },
 {
+alignment = -1;
 ref = diezcomp;
 }
 );
 vertOrigin = 180;
-vertWidth = 593;
 width = 997;
 },
 {
 layerId = m002;
 shapes = (
 {
+alignment = -1;
 pos = (0,76);
 ref = five.001;
 },
 {
+alignment = -1;
 ref = diezcomp;
 }
 );
 vertOrigin = 180;
-vertWidth = 593;
 width = 997;
 },
 {
 layerId = m003;
 shapes = (
 {
+alignment = -1;
 pos = (-5,76);
 ref = five.001;
 },
 {
+alignment = -1;
 pos = (-5,0);
 ref = diezcomp;
 }
 );
 vertOrigin = 180;
-vertWidth = 593;
 width = 997;
 }
 );
 },
 {
 glyphname = dieciseis;
-lastChange = "2026-01-06 20:37:40 +0000";
+lastChange = "2026-10-10 22:02:00 +0000";
 layers = (
 {
 layerId = "D79A8A11-453A-45E8-AB11-0C643E275637";
 shapes = (
 {
+alignment = -1;
 pos = (0,171);
 ref = six.001;
 },
@@ -82674,6 +82727,7 @@ width = 978;
 layerId = m002;
 shapes = (
 {
+alignment = -1;
 pos = (0,171);
 ref = six.001;
 },
@@ -82691,6 +82745,7 @@ width = 978;
 layerId = m003;
 shapes = (
 {
+alignment = -1;
 pos = (-15,171);
 ref = six.001;
 },
@@ -82708,12 +82763,13 @@ width = 978;
 },
 {
 glyphname = diecisiete;
-lastChange = "2026-01-06 20:37:40 +0000";
+lastChange = "2026-10-10 22:02:00 +0000";
 layers = (
 {
 layerId = "D79A8A11-453A-45E8-AB11-0C643E275637";
 shapes = (
 {
+alignment = -1;
 pos = (0,171);
 ref = seven.001;
 },
@@ -82731,6 +82787,7 @@ width = 990;
 layerId = m002;
 shapes = (
 {
+alignment = -1;
 pos = (0,171);
 ref = seven.001;
 },
@@ -82748,6 +82805,7 @@ width = 990;
 layerId = m003;
 shapes = (
 {
+alignment = -1;
 pos = (18,171);
 ref = seven.001;
 },
@@ -82765,12 +82823,13 @@ width = 990;
 },
 {
 glyphname = dieciocho;
-lastChange = "2026-01-06 20:37:40 +0000";
+lastChange = "2026-10-10 22:02:00 +0000";
 layers = (
 {
 layerId = "D79A8A11-453A-45E8-AB11-0C643E275637";
 shapes = (
 {
+alignment = -1;
 pos = (0,171);
 ref = eight.001;
 },
@@ -82788,6 +82847,7 @@ width = 990;
 layerId = m002;
 shapes = (
 {
+alignment = -1;
 pos = (0,171);
 ref = eight.001;
 },
@@ -82805,6 +82865,7 @@ width = 990;
 layerId = m003;
 shapes = (
 {
+alignment = -1;
 pos = (2,171);
 ref = eight.001;
 },
@@ -82822,12 +82883,13 @@ width = 990;
 },
 {
 glyphname = diecinueve;
-lastChange = "2026-01-06 20:37:40 +0000";
+lastChange = "2026-10-10 22:02:00 +0000";
 layers = (
 {
 layerId = "D79A8A11-453A-45E8-AB11-0C643E275637";
 shapes = (
 {
+alignment = -1;
 pos = (0,171);
 ref = nine.001;
 },
@@ -82845,6 +82907,7 @@ width = 990;
 layerId = m002;
 shapes = (
 {
+alignment = -1;
 pos = (0,171);
 ref = nine.001;
 },
@@ -82862,6 +82925,7 @@ width = 990;
 layerId = m003;
 shapes = (
 {
+alignment = -1;
 pos = (2,171);
 ref = nine.001;
 },
@@ -87555,6 +87619,7 @@ m002 = 1;
 isItalic = 1;
 linkStyle = Light;
 name = "Light Italic";
+weightClass = 300;
 },
 {
 axesValues = (
@@ -87581,6 +87646,7 @@ m003 = 0.12632;
 isItalic = 1;
 linkStyle = Medium;
 name = "Medium Italic";
+weightClass = 500;
 },
 {
 axesValues = (
@@ -87595,6 +87661,7 @@ isBold = 1;
 isItalic = 1;
 linkStyle = Regular;
 name = "Bold Italic";
+weightClass = 700;
 },
 {
 axesValues = (
@@ -87608,6 +87675,7 @@ m003 = 0.75789;
 isItalic = 1;
 linkStyle = Extrabold;
 name = "Extrabold Italic";
+weightClass = 800;
 },
 {
 axesValues = (

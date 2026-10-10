@@ -2,67 +2,7 @@
 .appVersion = "3436";
 .formatVersion = 3;
 DisplayStrings = (
-"/nine.num",
-"aaaáaäabacadaeaéaëafagahaiaıaíaïajakalamanañaoaóaöapaqarasataauaúaüavawaxayazaꞌa/a.alt a/aacute.alt a/adieresis.alt a/j.alt a/y.alt a/y.2 a/k_k a/t_t a
-áááäábácádáeáéáëáfágáháiáıáíáïájákálámánáñáoáóáöápáqárásátááuáúáüáváwáxáyázáꞌá/a.alt á/aacute.alt á/adieresis.alt á/j.alt á/y.alt á/y.2 á/k_k á/t_t á
-äääbäcädäeäéäëäfägähäiäıäíäïäjäkälämänäñäoäóäöäpäqäräsätääuäúäüäväwäxäyäzäꞌä/a.alt ä/aacute.alt ä/adieresis.alt ä/j.alt ä/y.alt ä/y.2 ä/k_k ä/t_t ä
-bbbcbdbebébëbfbgbhbibıbíbïbjbkblbmbnbñbobóböbpbqbrbsbtbbubúbübvbwbxbybzbꞌb/a.alt b/aacute.alt b/adieresis.alt b/j.alt b/y.alt b/y.2 b/k_k b/t_t b
-cccdcecécëcfcgchcicıcícïcjckclcmcncñcocócöcpcqcrcsctccucúcü
-cvcwcxcyczcꞌc/a.alt c/aacute.alt c/adieresis.alt c/j.alt c/y.alt c/y.2 c/k_k c/t_t c
-dddedédëdfdgdhdidıdídïdjdkdldmdndñdodódödpdqdrdsdtddudúdüdvdwdxdydzdꞌd/a.alt d/aacute.alt d/adieresis.alt d/j.alt d/y.alt d/y.2 d/k_k d/t_t d
-eeeéeëefegeheieıeíeïejekelemeneñeoeóeöepeqereseteeueúeüevewexeyezeꞌe/a.alt e/aacute.alt e/adieresis.alt e/j.alt e/y.alt e/y.2 e/k_k e/t_t e
-éééëéfeégéhéiéıéíéïéjékéléménéñéoéóéöépéqérésétééuéúéüévéwéxéyézéꞌé/a.alt é/aacute.alt é/adieresis.alt é/j.alt é/y.alt é/y.2 é/k_k é/t_t é
-ëëëfëgëhëiëıëíëïëjëkëlëmënëñëoëóëöëpëqërësëtëëuëúëüëvëwëxëyëzëꞌë/a.alt ë/aacute.alt ë/adieresis.alt ë/j.alt ë/y.alt ë/y.2 ë/k_k ë/t_t ë
-fffgfhfifıfífïfjfkflfmfnfñfofóföfpfqfrfsftffufúfüfvfwfxfyfzfꞌf/a.alt f/aacute.alt f/adieresis.alt f/j.alt f/y.alt f/y.2 f/k_k f/t_t f
-ggghgigıgígïgjgkglgmgngñgogógögpgqgrgsgtggugúgügvgwgxgygzgꞌg/a.alt g/aacute.alt g/adieresis.alt g/j.alt g/y.alt g/y.2 g/k_k g/t_t g
-hhhihıhíhïhjhkhlhmhnhñhohóhöhphqhrhshthhuhúhühvhwhxhyhzhꞌh/a.alt h/aacute.alt h/adieresis.alt h/j.alt h/y.alt h/y.2 h/k_k h/t_t h
-iiiıiíiïijikiliminiñioióiöipiqirisitiiuiúiüiviwixiyiziꞌi/a.alt i/aacute.alt i/adieresis.alt i/j.alt i/y.alt i/y.2 i/k_k i/t_t i
-ıııíıïıjıkılımınıñıoıóıöıpıqırısıtııuıúıüıvıwıxıyızıꞌı/a.alt ı/aacute.alt ı/adieresis.alt ı/j.alt ı/y.alt ı/y.2 ı/k_k ı/t_t ı
-íííïíjíkílímíníñíoíóíöípíqírísítííuíúíüívíwíxíyízíꞌí/a.alt í/aacute.alt í/adieresis.alt í/j.alt í/y.alt í/y.2 í/k_k í/t_t í
-ïïïjïkïlïmïnïñïoïóïöïpïqïrïsïtïïuïúïüïvïwïxïyïzïꞌï/a.alt ï/aacute.alt ï/adieresis.alt ï/j.alt ï/y.alt ï/y.2 ï/k_k ï/t_t ï
-jjjkjljmjnjñjojójöjpjqjrjsjtjjujújüjvjwjxjyjzjꞌj/a.alt j/aacute.alt j/adieresis.alt j/j.alt j/y.alt j/y.2 j/k_k j/t_t j
-kkklkmknkñkokókökpkqkrksktkkukúkükvkwkxkykzkꞌk/a.alt k/aacute.alt k/adieresis.alt k/j.alt k/y.alt k/y.2 k/k_k k/t_t k
-lllmlnlñlolólölplqlrlsltllulúlülvlwlxlylzlꞌl/a.alt l/aacute.alt l/adieresis.alt l/j.alt l/y.alt l/y.2 l/k_k l/t_t l
-mmmnmñmomómömpmqmrmsmtmmumúmümvmwmxmymzmꞌm/a.alt m/aacute.alt m/adieresis.alt m/j.alt m/y.alt m/y.2 m/k_k m/t_t m
-nnnñnonónönpnqnrnsntnnunúnünvnwnxnynznꞌn/a.alt n/aacute.alt n/adieresis.alt n/j.alt n/y.alt n/y.2 n/k_k n/t_t n
-ñññoñóñöñpñqñrñsñtññuñúñüñvñwñxñyñzñꞌñ/a.alt ñ/aacute.alt ñ/adieresis.alt ñ/j.alt ñ/y.alt ñ/y.2 ñ/k_k ñ/t_t ñ
-oooóoöopoqorosotoouoúoüovowoxoyozoꞌo/a.alt o/aacute.alt o/adieresis.alt o/j.alt o/y.alt o/y.2 o/k_k o/t_t o
-óóóöópóqórósótóóuóúóüóvówóxóyózóꞌó/a.alt ó/aacute.alt ó/adieresis.alt ó/j.alt ó/y.alt ó/y.2 ó/k_k ó/t_t ó
-öööpöqörösötööuöúöüövöwöxöyözöꞌö/a.alt ö/aacute.alt ö/adieresis.alt ö/j.alt ö/y.alt ö/y.2 ö/k_k ö/t_t ö
-pppqprpsptppupúpüpvpwpxpypzpꞌp/a.alt p/aacute.alt p/adieresis.alt p/j.alt p/y.alt p/y.2 p/k_k p/t_t p
-qqqrqsqtqquqúqüqvqwqxqyqzqꞌq/a.alt q/aacute.alt q/adieresis.alt q/j.alt q/y.alt q/y.2 q/k_k q/t_t q
-rrrsrtrrurúrürvrwrxryrzrꞌr/a.alt r/aacute.alt r/adieresis.alt r/j.alt r/y.alt r/y.2 r/k_k r/t_t r
-ssstssusúsüsvswsxsyszsꞌs/a.alt s/aacute.alt s/adieresis.alt s/j.alt s/y.alt s/y.2 s/k_k s/t_t s
-ttttutútütvtwtxtytztꞌt/a.alt t/aacute.alt t/adieresis.alt t/j.alt t/y.alt t/y.2 t/k_k t/t_t t
-uúüvwxyzꞌ/a.alt/aacute.alt/adieresis.alt/j.alt/y.alt/y.2/k_k/t_t 
-uuuúuüuvuwuxuyuzuꞌu/a.alt u/aacute.alt u/adieresis.alt u/j.alt u/y.alt u/y.2 u/k_k u/t_t u
-úúúüúvúwúxúyúzúꞌú/a.alt ú/aacute.alt ú/adieresis.alt ú/j.alt ú/y.alt ú/y.2 ú/k_k ú/t_t ú
-üüüvüwüxüyüzüꞌü/a.alt ü/aacute.alt ü/adieresis.alt ü/j.alt ü/y.alt ü/y.2 ü/k_k ü/t_t ü
-vvvwvxvyvzvꞌv/a.alt v/aacute.alt v/adieresis.alt v/j.alt v/y.alt v/y.2 v/k_k v/t_t v
-wwwxwywzwꞌw/a.alt w/aacute.alt w/adieresis.alt w/j.alt w/y.alt w/y.2 w/k_k w/t_t w
-xxxyxzxꞌx/a.alt x/aacute.alt x/adieresis.alt x/j.alt x/y.alt x/y.2 x/k_k x/t_t x
-yyyzyꞌy/a.alt y/aacute.alt y/adieresis.alt y/j.alt y/y.alt y/y.2 y/k_k y/t_t y
-zzzꞌz/a.alt z/aacute.alt z/adieresis.alt z/j.alt z/y.alt z/y.2 z/k_k z/t_t z
-ꞌꞌꞌ/a.alt ꞌ/aacute.alt ꞌ/adieresis.alt ꞌ/j.alt ꞌ/y.alt ꞌ/y.2 ꞌ/k_k ꞌ/t_t ꞌ
-/a.alt/a.alt/a.alt/aacute.alt/a.alt/adieresis.alt/a.alt/j.alt/a.alt/y.alt/a.alt/y.2/a.alt/k_k/a.alt/t_t/a.alt 
-/aacute.alt/aacute.alt/aacute.alt/adieresis.alt/aacute.alt/j.alt/aacute.alt/y.alt/aacute.alt/y.2/aacute.alt/k_k/aacute.alt/t_t/aacute.alt 
-/adieresis.alt/adieresis.alt/adieresis.alt/j.alt/adieresis.alt/y.alt/adieresis.alt/y.2/adieresis.alt/k_k/adieresis.alt/t_t/adieresis.alt 
-/j.alt/j.alt/j.alt/y.alt/j.alt/y.2/j.alt/k_k/j.alt/t_t/j.alt 
-/y.alt/y.alt/y.alt/y.2/y.alt/k_k/y.alt/t_t/y.alt 
-/y.2/y.2/y.2/k_k/y.2/t_t/y.2 
-/k_k/k_k/k_k/t_t/k_k 
-/t_t/t_t/t_t 
-",
-"ZïºHH",
-"Y/z.sc HH",
-"",
-"/ts.sc",
-"}",
-"...…",
-"/k_k",
-"",
-"/k_k",
-""
+"/nine.num"
 );
 axes = (
 {
@@ -12692,7 +12632,7 @@ color = 4;
 glyphname = j;
 kernLeft = j;
 kernRight = j;
-lastChange = "2026-04-24 16:39:44 +0000";
+lastChange = "2026-05-30 16:05:07 +0000";
 layers = (
 {
 hints = (
@@ -12752,7 +12692,6 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(10,-227,l),
 (134,-213,o),
 (187,-116,o),
 (187,-10,cs),
@@ -12773,12 +12712,16 @@ nodes = (
 (99,68,cs),
 (100,-120,o),
 (97,-165,o),
-(6,-201,c)
+(6,-201,c),
+(10,-227,l)
 );
 },
 {
 closed = 1;
 nodes = (
+(173,589,o),
+(197,616,o),
+(198,649,cs),
 (198,683,o),
 (176,709,o),
 (140,709,cs),
@@ -12787,10 +12730,7 @@ nodes = (
 (81,648,cs),
 (81,616,o),
 (107,589,o),
-(140,589,cs),
-(173,589,o),
-(197,616,o),
-(198,649,cs)
+(140,589,cs)
 );
 }
 );
@@ -12880,7 +12820,6 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(2,-228,l),
 (168,-204,o),
 (263,-104,o),
 (263,34,cs),
@@ -12901,7 +12840,8 @@ nodes = (
 (84,-26,cs),
 (84,-104,o),
 (54,-143,o),
-(-11,-159,c)
+(-11,-159,c),
+(2,-228,l)
 );
 },
 {
