@@ -1,0 +1,93 @@
+
+name: Publicar fuentes
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Crear paquetes ZIP
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile, ZIP_DEFLATED
+
+          root = Path("Fonts")
+          output = Path("dist")
+          output.mkdir(exist_ok=True)
+
+          families = {
+              "Ayuujk": [],
+              "Mutsk": [],
+              "Tuki": [],
+              "Tuki-Glifos": [],
+          }
+
+          if not root.is_dir():
+              raise SystemExit("No existe la carpeta Fonts")
+
+          for font in root.rglob("*"):
+              if not font.is_file() or font.suffix.lower() != ".otf":
+                  continue
+
+              name = font.stem.lower().replace("-", "").replace(" ", "")
+
+              if name.startswith("tukiglifos"):
+                  family = "Tuki-Glifos"
+              elif name.startswith("ayuujk"):
+                  family = "Ayuujk"
+              elif name.startswith("mutsk"):
+                  family = "Mutsk"
+              elif name.startswith("tuki"):
+                  family = "Tuki"
+              else:
+                  continue
+
+              families[family].append(font)
+
+          for family, fonts in families.items():
+              if not fonts:
+                  raise SystemExit(f"No se encontraron fuentes para {family}")
+
+              archive = output / f"{family}.zip"
+
+              with ZipFile(archive, "w", ZIP_DEFLATED) as zip_file:
+                  for font in sorted(fonts):
+                      zip_file.write(
+                          font,
+                          arcname=f"{family}/{font.name}"
+                      )
+
+              print(f"{archive}: {len(fonts)} fuentes")
+
+          PY
+
+      - name: Publicar Release
+        if: startsWith(github.ref, 'refs/tags/')
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.ref_name }}
+        shell: bash
+        run: |
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            echo "La Release $TAG ya existe."
+            exit 1
+          fi
+
+          gh release create "$TAG" dist/*.zip \
+            --title "Fuentes Mixe $TAG" \
+            --notes "Versión $TAG de las familias Ayuujk, Mutsk, Tuki y Tuki Glifos." \
+            --verify-tag
