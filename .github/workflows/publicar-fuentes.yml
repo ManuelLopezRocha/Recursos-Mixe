@@ -6,6 +6,12 @@ on:
     tags:
       - 'v*'
   workflow_dispatch:
+    inputs:
+      version:
+        description: 'Versión existente que deseas actualizar'
+        required: true
+        default: 'v1.0.0'
+        type: string
 
 permissions:
   contents: write
@@ -63,31 +69,64 @@ jobs:
                   raise SystemExit(f"No se encontraron fuentes para {family}")
 
               archive = output / f"{family}.zip"
+              seen = set()
 
               with ZipFile(archive, "w", ZIP_DEFLATED) as zip_file:
                   for font in sorted(fonts):
-                      zip_file.write(
-                          font,
-                          arcname=f"{family}/{font.name}"
-                      )
+                      archive_name = f"{family}/{font.name}"
+
+                      if archive_name.lower() in seen:
+                          raise SystemExit(
+                              f"Archivo duplicado: {archive_name}"
+                          )
+
+                      seen.add(archive_name)
+                      zip_file.write(font, arcname=archive_name)
 
               print(f"{archive}: {len(fonts)} fuentes")
 
           PY
 
-      - name: Publicar Release
-        if: startsWith(github.ref, 'refs/tags/')
-        env:
-          GH_TOKEN: ${{ github.token }}
-          TAG: ${{ github.ref_name }}
+      - name: Determinar versión
+        id: version
         shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          INPUT_VERSION: ${{ inputs.version }}
+          REF_NAME: ${{ github.ref_name }}
         run: |
-          if gh release view "$TAG" >/dev/null 2>&1; then
-            echo "La Release $TAG ya existe."
-            exit 1
+          if [[ "$EVENT_NAME" == "workflow_dispatch" ]]; then
+            echo "tag=$INPUT_VERSION" >> "$GITHUB_OUTPUT"
+            echo "mode=update" >> "$GITHUB_OUTPUT"
+          else
+            echo "tag=$REF_NAME" >> "$GITHUB_OUTPUT"
+            echo "mode=create" >> "$GITHUB_OUTPUT"
           fi
 
+      - name: Crear nueva Release
+        if: steps.version.outputs.mode == 'create'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.version.outputs.tag }}
+        shell: bash
+        run: |
           gh release create "$TAG" dist/*.zip \
             --title "Fuentes Mixe $TAG" \
-            --notes "Versión $TAG de las familias Ayuujk, Mutsk, Tuki y Tuki Glifos." \
+            --notes "Versión $TAG de Ayuujk, Mutsk, Tuki y Tuki Glifos." \
             --verify-tag
+
+      - name: Actualizar Release existente
+        if: steps.version.outputs.mode == 'update'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.version.outputs.tag }}
+        shell: bash
+        run: |
+          gh release view "$TAG" >/dev/null || {
+            echo "No existe la Release $TAG"
+            exit 1
+          }
+
+          gh release upload "$TAG" dist/*.zip --clobber
+
+          echo "Archivos actualizados en $TAG"
