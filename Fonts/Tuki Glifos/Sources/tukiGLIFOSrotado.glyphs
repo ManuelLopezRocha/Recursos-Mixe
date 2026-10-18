@@ -1,8 +1,8 @@
 {
-.appVersion = "3532";
+.appVersion = "4107";
 .formatVersion = 3;
 DisplayStrings = (
-"/lg135",
+"/tuki",
 "/lgr36",
 "/lgp32",
 "6",
@@ -459,7 +459,7 @@ value = 1;
 }
 );
 date = "2026-04-24 00:27:18 +0000";
-familyName = "Tuki Glifos";
+familyName = "Tuki Glifos Rotado";
 featurePrefixes = (
 {
 code = "languagesystem DFLT dflt;
@@ -18085,23 +18085,24 @@ unicode = 59217;
 glyphname = quince;
 kernLeft = "50";
 kernRight = "50";
-lastChange = "2026-10-11 03:06:29 +0000";
+lastChange = "2026-10-11 03:18:19 +0000";
 layers = (
 {
 layerId = m003;
 shapes = (
 {
+alignment = -1;
 pos = (0,76);
 ref = five.001;
 },
 {
+alignment = -1;
 angle = 90;
 pos = (478,-152);
 ref = diezcomp;
 }
 );
 vertOrigin = 100;
-vertWidth = 800;
 width = 571;
 }
 );
@@ -51258,6 +51259,7 @@ instances = (
 axesValues = (
 95
 );
+exports = 0;
 instanceInterpolations = {
 m003 = 1;
 };
