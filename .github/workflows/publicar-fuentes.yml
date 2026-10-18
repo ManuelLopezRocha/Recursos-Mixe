@@ -5,13 +5,23 @@ on:
   push:
     tags:
       - 'v*'
+  
   workflow_dispatch:
     inputs:
+      operation:
+        description: '¿Qué deseas hacer?'
+        required: true
+        default: 'update'
+        type: choice
+        options:
+          - update
+          - create
       version:
-        description: 'Versión existente que deseas actualizar'
+        description: 'Versión de la Release'
         required: true
         default: 'v1.0.0'
         type: string
+
 
 permissions:
   contents: write
@@ -87,33 +97,58 @@ jobs:
 
           PY
 
+      
       - name: Determinar versión
         id: version
         shell: bash
         env:
           EVENT_NAME: ${{ github.event_name }}
+          INPUT_OPERATION: ${{ inputs.operation }}
           INPUT_VERSION: ${{ inputs.version }}
           REF_NAME: ${{ github.ref_name }}
         run: |
           if [[ "$EVENT_NAME" == "workflow_dispatch" ]]; then
-            echo "tag=$INPUT_VERSION" >> "$GITHUB_OUTPUT"
-            echo "mode=update" >> "$GITHUB_OUTPUT"
+            TAG="$INPUT_VERSION"
+            MODE="$INPUT_OPERATION"
           else
-            echo "tag=$REF_NAME" >> "$GITHUB_OUTPUT"
-            echo "mode=create" >> "$GITHUB_OUTPUT"
+            TAG="$REF_NAME"
+            MODE="create"
           fi
+
+          if [[ ! "$TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "Versión inválida: $TAG"
+            exit 1
+          fi
+
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+          echo "mode=$MODE" >> "$GITHUB_OUTPUT"
 
       - name: Crear nueva Release
         if: steps.version.outputs.mode == 'create'
         env:
           GH_TOKEN: ${{ github.token }}
           TAG: ${{ steps.version.outputs.tag }}
+          EVENT_NAME: ${{ github.event_name }}
         shell: bash
         run: |
-          gh release create "$TAG" dist/*.zip \
-            --title "Fuentes Mixe $TAG" \
-            --notes "Versión $TAG de Ayuujk, Mutsk, Tuki y Tuki Glifos." \
-            --verify-tag
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            echo "La Release $TAG ya existe."
+            exit 1
+          fi
+
+          if [[ "$EVENT_NAME" == "workflow_dispatch" ]]; then
+            gh release create "$TAG" dist/*.zip \
+              --target "$GITHUB_SHA" \
+              --title "Fuentes Mixe $TAG" \
+              --notes "Versión $TAG de Ayuujk, Mutsk, Tuki y Tuki Glifos." \
+              --latest
+          else
+            gh release create "$TAG" dist/*.zip \
+              --title "Fuentes Mixe $TAG" \
+              --notes "Versión $TAG de Ayuujk, Mutsk, Tuki y Tuki Glifos." \
+              --verify-tag \
+              --latest
+          fi
 
       - name: Actualizar Release existente
         if: steps.version.outputs.mode == 'update'
