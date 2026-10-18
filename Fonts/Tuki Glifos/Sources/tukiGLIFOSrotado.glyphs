@@ -1,8 +1,8 @@
 {
-.appVersion = "4107";
+.appVersion = "3532";
 .formatVersion = 3;
 DisplayStrings = (
-"/tuki",
+"/lg135",
 "/lgr36",
 "/lgp32",
 "6",
@@ -13,7 +13,8 @@ DisplayStrings = (
 "/lg036 171112119057",
 "/lg031",
 ",",
-"/t_a"
+"/t_a",
+" "
 );
 axes = (
 {
@@ -459,7 +460,7 @@ value = 1;
 }
 );
 date = "2026-04-24 00:27:18 +0000";
-familyName = "Tuki Glifos Rotado";
+familyName = "Tuki Glifos";
 featurePrefixes = (
 {
 code = "languagesystem DFLT dflt;
@@ -486,127 +487,6 @@ sub lg116 by lg116_042;
 
 ";
 tag = aalt;
-},
-{
-code = "#ligaduras logogramas
-sub lg023 lg024 by lg023_024; 
-sub lg129 lg060 by lg129_060; 
-sub n_e lg125 by lg042_125; 
-sub lg072 lg146 by lg072_146;
-sub lg076 lg078 by lg076_78;
-sub lg078 lg079 by lg078_79; 
-sub t_u lg100 by lg093_100; 
-sub lg096 lg094 by lg096_094; 
-sub lg096 lg136 lg163 by lg096_136_163; 
-sub lg151 n_a by lg134_151_44; 
-sub lg152c lg072 by lg152c_72;
-sub s_u s_u by su_su;
-";
-tag = liga;
-},
-{
-code = "sub zero zero eight by lg008;
-sub zero two one by lg021;
-sub zero two two by lg022;
-sub zero two three by lg023;
-sub zero two four by lg024;
-sub zero three one by lg031;
-sub zero three two by lg032;
-sub zero three three by lg033;
-sub zero three four by lg034;
-sub zero three six by lg036;
-sub zero four zero by lg040;
-sub zero four one by lg041;
-sub zero four eight by lg048;
-sub zero five zero by lg050;
-sub zero five one by lg051;
-sub zero five seven by lg057;
-sub zero five eight by lg058;
-sub zero five nine by lg059;
-sub zero six zero by lg060;
-sub zero six one by lg061;
-sub zero six six by lg066;
-sub zero six seven by lg067;
-sub zero six eight by lg068;
-sub zero six nine by lg069;
-sub zero seven one by lg071;
-sub zero seven two by lg072;
-sub zero seven five by lg075;
-sub zero seven six by lg076;
-sub zero seven seven by lg077;
-sub zero seven eight by lg078;
-sub zero seven nine by lg079;
-sub zero eight zero by lg080;
-sub zero eight one by lg081;
-sub zero eight three by lg083;
-sub zero eight five by lg085;
-sub zero eight nine by lg089;
-sub zero nine one by lg091;
-sub zero nine four by lg094;
-sub zero nine five by lg095;
-sub zero nine six by lg096;
-sub zero nine nine by lg099;
-sub one zero zero by lg100;
-sub one zero four by lg104;
-sub one zero five by lg105;
-sub one zero seven by lg107;
-sub one one zero by lg110;
-sub one one two by lg112;
-sub one one five by lg115;
-sub one one six by lg116;
-sub one one seven by lg117;
-sub one one nine by lg119;
-sub one two one by lg121;
-sub one two five by lg125;
-sub one two nine by lg129;
-sub one three zero by lg130;
-sub one three two by lg132;
-sub one three five by lg135;
-sub one three six by lg136;
-sub one three seven by lg137;
-sub one four four by lg144;
-sub one four five by lg145;
-sub one four six by lg146;
-sub one four nine by lg149;
-sub one five zero by lg150;
-sub one five one by lg151;
-sub one five two by lg152;
-sub one five two A by lg152a;
-sub one five two C by lg152c;
-sub one five four by lg154;
-sub one five five by lg155;
-sub one five nine by lg159;
-sub one six zero by lg160;
-sub one six one by lg161;
-sub one six three by lg163;
-sub one six four by lg164;
-sub one six six by lg166;
-sub one six seven by lg167;
-sub one six eight by lg168;
-sub one seven one by lg171;
-sub one seven two by lg172;
-sub one seven three by lg173;
-sub one eight one by lg181;
-sub one eight two by lg182;
-sub one eight four by lg184;
-#ligaduras
-sub t_u one lg100 by lg093_100;
-sub lg079 lg078 by lg078_79;
-#faltantes
-sub P three one by lgp31;
-sub P three two by lgp32;
-sub R three six by lgr36;
-sub S three nine by lgs39;
-sub U zero one by lgu1;
-";
-disabled = 1;
-labels = (
-{
-language = dflt;
-value = Logogramas;
-}
-);
-tag = ss02;
 },
 {
 code = "#space
@@ -827,6 +707,127 @@ sub U zero one by lgu1;
 
 ";
 tag = calt;
+},
+{
+code = "#ligaduras logogramas
+sub lg023 lg024 by lg023_024; 
+sub lg129 lg060 by lg129_060; 
+sub n_e lg125 by lg042_125; 
+sub lg072 lg146 by lg072_146;
+sub lg076 lg078 by lg076_78;
+sub lg078 lg079 by lg078_79; 
+sub t_u lg100 by lg093_100; 
+sub lg096 lg094 by lg096_094; 
+sub lg096 lg136 lg163 by lg096_136_163; 
+sub lg151 n_a by lg134_151_44; 
+sub lg152c lg072 by lg152c_72;
+sub s_u s_u by su_su;
+";
+tag = liga;
+},
+{
+code = "sub zero zero eight by lg008;
+sub zero two one by lg021;
+sub zero two two by lg022;
+sub zero two three by lg023;
+sub zero two four by lg024;
+sub zero three one by lg031;
+sub zero three two by lg032;
+sub zero three three by lg033;
+sub zero three four by lg034;
+sub zero three six by lg036;
+sub zero four zero by lg040;
+sub zero four one by lg041;
+sub zero four eight by lg048;
+sub zero five zero by lg050;
+sub zero five one by lg051;
+sub zero five seven by lg057;
+sub zero five eight by lg058;
+sub zero five nine by lg059;
+sub zero six zero by lg060;
+sub zero six one by lg061;
+sub zero six six by lg066;
+sub zero six seven by lg067;
+sub zero six eight by lg068;
+sub zero six nine by lg069;
+sub zero seven one by lg071;
+sub zero seven two by lg072;
+sub zero seven five by lg075;
+sub zero seven six by lg076;
+sub zero seven seven by lg077;
+sub zero seven eight by lg078;
+sub zero seven nine by lg079;
+sub zero eight zero by lg080;
+sub zero eight one by lg081;
+sub zero eight three by lg083;
+sub zero eight five by lg085;
+sub zero eight nine by lg089;
+sub zero nine one by lg091;
+sub zero nine four by lg094;
+sub zero nine five by lg095;
+sub zero nine six by lg096;
+sub zero nine nine by lg099;
+sub one zero zero by lg100;
+sub one zero four by lg104;
+sub one zero five by lg105;
+sub one zero seven by lg107;
+sub one one zero by lg110;
+sub one one two by lg112;
+sub one one five by lg115;
+sub one one six by lg116;
+sub one one seven by lg117;
+sub one one nine by lg119;
+sub one two one by lg121;
+sub one two five by lg125;
+sub one two nine by lg129;
+sub one three zero by lg130;
+sub one three two by lg132;
+sub one three five by lg135;
+sub one three six by lg136;
+sub one three seven by lg137;
+sub one four four by lg144;
+sub one four five by lg145;
+sub one four six by lg146;
+sub one four nine by lg149;
+sub one five zero by lg150;
+sub one five one by lg151;
+sub one five two by lg152;
+sub one five two A by lg152a;
+sub one five two C by lg152c;
+sub one five four by lg154;
+sub one five five by lg155;
+sub one five nine by lg159;
+sub one six zero by lg160;
+sub one six one by lg161;
+sub one six three by lg163;
+sub one six four by lg164;
+sub one six six by lg166;
+sub one six seven by lg167;
+sub one six eight by lg168;
+sub one seven one by lg171;
+sub one seven two by lg172;
+sub one seven three by lg173;
+sub one eight one by lg181;
+sub one eight two by lg182;
+sub one eight four by lg184;
+#ligaduras
+sub t_u one lg100 by lg093_100;
+sub lg079 lg078 by lg078_79;
+#faltantes
+sub P three one by lgp31;
+sub P three two by lgp32;
+sub R three six by lgr36;
+sub S three nine by lgs39;
+sub U zero one by lgu1;
+";
+disabled = 1;
+labels = (
+{
+language = dflt;
+value = Logogramas;
+}
+);
+tag = ss02;
 },
 {
 code = "sub P A K by p_a_k;
@@ -1440,7 +1441,7 @@ note = NULL;
 },
 {
 glyphname = space;
-lastChange = "2026-04-23 16:15:12 +0000";
+lastChange = "2026-10-16 21:13:49 +0000";
 layers = (
 {
 layerId = m003;
@@ -12254,7 +12255,7 @@ unicode = 59173;
 {
 glyphname = t_a;
 kernTop = lg022;
-lastChange = "2026-10-11 03:10:10 +0000";
+lastChange = "2026-10-11 03:10:52 +0000";
 layers = (
 {
 layerId = m003;
@@ -12273,28 +12274,15 @@ nodes = (
 (239,-17,o),
 (239,23,cs),
 (239,243,ls),
-(239,292,o),
-(247,324,o),
-(283,352,c),
-(283,410,l),
-(209,388,o),
-(195,307,o),
-(195,243,cs),
-(195,23,ls),
-(195,-26,o),
-(199,-63,o),
-(254,-90,c),
-(268,-70,l),
-(181,-70,ls),
-(113,-70,o),
-(95,-36,o),
-(95,30,cs),
-(95,535,ls),
-(95,586,o),
-(114,612,o),
-(163,612,cs),
-(340,612,l),
-(340,662,l),
+(239,291,o),
+(247,323,o),
+(280,350,c),
+(280,20,ls),
+(280,-63,o),
+(322,-120,o),
+(422,-120,cs),
+(517,-120,l),
+(517,662,l),
 (156,662,ls),
 (90,662,o),
 (50,622,o),
@@ -12308,19 +12296,26 @@ nodes = (
 {
 closed = 1;
 nodes = (
-(488,-9,l),
-(488,31,l),
-(367,31,l),
-(367,-9,l)
-);
-},
-{
-closed = 1;
-nodes = (
-(488,93,l),
-(488,133,l),
-(367,133,l),
-(367,93,l)
+(113,-70,o),
+(95,-36,o),
+(95,30,cs),
+(95,535,ls),
+(95,586,o),
+(114,612,o),
+(163,612,cs),
+(283,612,l),
+(281,605,o),
+(280,598,o),
+(280,590,cs),
+(280,409,l),
+(209,386,o),
+(195,306,o),
+(195,243,cs),
+(195,23,ls),
+(195,-15,o),
+(197,-45,o),
+(224,-70,c),
+(181,-70,ls)
 );
 },
 {
@@ -12343,21 +12338,6 @@ nodes = (
 {
 closed = 1;
 nodes = (
-(517,-120,l),
-(517,662,l),
-(346,662,ls),
-(311,662,o),
-(280,632,o),
-(280,590,cs),
-(280,20,ls),
-(280,-63,o),
-(322,-120,o),
-(422,-120,cs)
-);
-},
-{
-closed = 1;
-nodes = (
 (345,-70,o),
 (325,-36,o),
 (325,30,cs),
@@ -12366,6 +12346,32 @@ nodes = (
 (333,612,o),
 (353,612,cs),
 (472,612,l),
+(472,551,l),
+(367,551,l),
+(367,511,l),
+(472,511,l),
+(472,449,l),
+(367,449,l),
+(367,409,l),
+(472,409,l),
+(472,347,l),
+(408,347,ls),
+(381,347,o),
+(359,329,o),
+(359,290,cs),
+(359,252,ls),
+(359,213,o),
+(381,195,o),
+(408,195,cs),
+(472,195,l),
+(472,133,l),
+(367,133,l),
+(367,93,l),
+(472,93,l),
+(472,31,l),
+(367,31,l),
+(367,-9,l),
+(472,-9,l),
 (472,-70,l),
 (421,-70,ls)
 );
@@ -12390,9 +12396,6 @@ nodes = (
 {
 closed = 1;
 nodes = (
-(472,195,l),
-(472,237,l),
-(419,237,ls),
 (399,237,o),
 (394,245,o),
 (394,257,cs),
@@ -12401,15 +12404,8 @@ nodes = (
 (399,305,o),
 (419,305,cs),
 (472,305,l),
-(472,347,l),
-(408,347,ls),
-(381,347,o),
-(359,329,o),
-(359,290,cs),
-(359,252,ls),
-(359,213,o),
-(381,195,o),
-(408,195,cs)
+(472,237,l),
+(419,237,ls)
 );
 },
 {
@@ -12434,24 +12430,6 @@ closed = 0;
 nodes = (
 (517,-120,l),
 (517,662,l)
-);
-},
-{
-closed = 1;
-nodes = (
-(488,409,l),
-(488,449,l),
-(367,449,l),
-(367,409,l)
-);
-},
-{
-closed = 1;
-nodes = (
-(488,511,l),
-(488,551,l),
-(367,551,l),
-(367,511,l)
 );
 }
 );
@@ -18085,24 +18063,23 @@ unicode = 59217;
 glyphname = quince;
 kernLeft = "50";
 kernRight = "50";
-lastChange = "2026-10-11 03:18:19 +0000";
+lastChange = "2026-10-11 03:06:29 +0000";
 layers = (
 {
 layerId = m003;
 shapes = (
 {
-alignment = -1;
 pos = (0,76);
 ref = five.001;
 },
 {
-alignment = -1;
 angle = 90;
 pos = (478,-152);
 ref = diezcomp;
 }
 );
 vertOrigin = 100;
+vertWidth = 800;
 width = 571;
 }
 );
@@ -51259,7 +51236,6 @@ instances = (
 axesValues = (
 95
 );
-exports = 0;
 instanceInterpolations = {
 m003 = 1;
 };

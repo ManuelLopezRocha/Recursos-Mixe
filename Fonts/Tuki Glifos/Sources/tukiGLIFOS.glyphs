@@ -494,22 +494,6 @@ sub lg116 by lg116_042;";
 tag = aalt;
 },
 {
-code = "sub t s by ts;
-sub lg023 lg024 by lg023_024;
-sub lg129 lg060 by lg129_060; 
-sub n_e lg125 by lg042_125; 
-sub lg072 lg146 by lg072_146;
-sub lg076 lg078 by lg076_78;
-sub lg078 lg079 by lg078_79; 
-sub t_u lg100 by lg093_100; 
-sub lg096 lg094 by lg096_094; 
-sub lg096 lg136 lg163 by lg096_136_163; 
-sub lg151 n_a by lg134_151_44; 
-sub lg152c lg072 by lg152c_72;
-sub s_u s_u by su_su;";
-tag = liga;
-},
-{
 code = "sub [quotesinglbase quoteleft quoteright quotesingle] @mins by saltillo;
 sub [quotesinglbase quoteleft quoteright quotesingle saltillo] @caps by Saltillo;
 
@@ -819,6 +803,22 @@ sub S three nine by lgs39;
 sub U zero one by lgu1;
 ";
 tag = calt;
+},
+{
+code = "sub t s by ts;
+sub lg023 lg024 by lg023_024;
+sub lg129 lg060 by lg129_060; 
+sub n_e lg125 by lg042_125; 
+sub lg072 lg146 by lg072_146;
+sub lg076 lg078 by lg076_78;
+sub lg078 lg079 by lg078_79; 
+sub t_u lg100 by lg093_100; 
+sub lg096 lg094 by lg096_094; 
+sub lg096 lg136 lg163 by lg096_136_163; 
+sub lg151 n_a by lg134_151_44; 
+sub lg152c lg072 by lg152c_72;
+sub s_u s_u by su_su;";
+tag = liga;
 },
 {
 automatic = 1;
